@@ -40,9 +40,6 @@
 /* header nav */
 .header {
   box-shadow: 0 3px 10px #ccc;
-  position: fixed;
-  width: 100%;
-  top: 0;
 }
 
 .headerContainer{
@@ -441,7 +438,7 @@
 .aboutMeTopContainer {
   width: 1000px;
   margin: auto;
-  margin-top: 80px;
+  margin-top: 40px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -468,10 +465,6 @@
 .myInfoContents h4{
   font-family:EASTARJET-Medium;
   font-size: 26px;
-}
-
-.content p{
-  text-align: left;
 }
 
 /* 
