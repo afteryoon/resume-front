@@ -10,7 +10,11 @@ const ExampleCarouselImage = ({ projectInfo, myProject1_github }) => {
     const explanation = projectInfo[4];
     const functions = projectInfo[5];
     const skills = projectInfo[6];
-
+    
+    const urlClick=(e)=>{
+        const url=e.target.dataset.to;
+        window.open(url);
+    }
 
     return (
         <div>
@@ -31,7 +35,13 @@ const ExampleCarouselImage = ({ projectInfo, myProject1_github }) => {
                             {myProject1_github !== null ? (
                                 <>
                                     <h5 style={{marginTop: '30px'}}>GitHub</h5>
-                                    <p className='gitUrl'>{myProject1_github}</p>
+                                    <p className='gitUrl' >
+                                        <button onClick={urlClick} data-to={myProject1_github}>{myProject1_github}</button>
+                                    </p>
+                                    <h5 style={{marginTop: '30px'}}>notion</h5>
+                                    <p className='gitUrl' >
+                                        <button onClick={urlClick} data-to="https://www.notion.so/fa933c9f080f425cb5648860b8186dbd">notion-dagachi</button>
+                                    </p>
                                 </>
                             ) : null}
 
@@ -45,7 +55,7 @@ const ExampleCarouselImage = ({ projectInfo, myProject1_github }) => {
                         <Carousel controls={false} interval={5000}>
                             {imageUrls.map((imgUrl, index) => (
                                 <Carousel.Item>
-                                    <img key={`imgUrl-${index}`} src={imgUrl} alt="" />
+                                    <img key={`imgUrl-${index}`} src={imgUrl} alt="" style={{objectFit: "cover", width:"500px",height:"500px",}}/>
                                 </Carousel.Item>
                             ))}
                         </Carousel>
