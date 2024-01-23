@@ -17,8 +17,11 @@ const Header = () =>{
         // navigate(path);
 
         if (targetElement) {
-            targetElement.scrollIntoView({ behavior: 'smooth' });
-          }
+            window.scroll({
+                top: targetElement.offsetTop - 50,
+                behavior: 'smooth',
+            });
+        }
     };
 
 

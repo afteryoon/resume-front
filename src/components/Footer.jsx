@@ -1,8 +1,8 @@
 const Footer = () => {
 
     return(
-        <div className="footerContainer">
-            <h5> 푸터공간입니다 </h5>
+        <div className="footerContainer" style={{marginTop:"10px"}}>
+            <h5> 끝까지 읽어주셔서 감사합니다. </h5>
         </div>
     )
 }

@@ -45,7 +45,9 @@ const ExampleCarouselImage = ({ projectInfo, myProject1_github }) => {
                         <Carousel controls={false} interval={5000}>
                             {imageUrls.map((imgUrl, index) => (
                                 <Carousel.Item>
-                                    <img key={`imgUrl-${index}`} src={imgUrl} alt="" />
+
+                                    <img key={`imgUrl-${index}`} src={imgUrl} alt="" style={{height:"500px",}}/>
+
                                 </Carousel.Item>
                             ))}
                         </Carousel>
