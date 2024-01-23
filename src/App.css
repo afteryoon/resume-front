@@ -467,6 +467,10 @@
   font-size: 26px;
 }
 
+.content p{
+  text-align: left;
+}
+
 /* 
 .App-logo {
   height: 40vmin;
