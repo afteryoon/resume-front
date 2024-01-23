@@ -13,7 +13,7 @@ const Project = () => {
         "참여인원", 
         "취미생활을 공유하고 경험을 나누는 다가치!", 
         ["모임을 달력에 기록, 길 안내까지!", "친목을 도모하는 단체 채팅!", "내 마음대로 취향껏 고르는 레이아웃"], 
-        ["기술스택1", "기술스택2", "기술스택3"]
+        ["spring","springBoot", "oracleDB", "Java","JavaScript", "git"]
     ];
     const myProject1_github = 'https://github.com/newTypeo/dagachi';
 
@@ -26,14 +26,14 @@ const Project = () => {
                     <BackgroundCarouselImage projectInfo = {myProject1} myProject1_github = {myProject1_github} />
                     
                 </Carousel.Item>
-                <Carousel.Item>
+                {/* <Carousel.Item>
                     <BackgroundCarouselImage projectInfo = {myProject1} />
                     
                 </Carousel.Item>
                 <Carousel.Item>
                     <BackgroundCarouselImage projectInfo = {myProject1} />
                     
-                </Carousel.Item>
+                </Carousel.Item> */}
             </Carousel>
         </div>
     )
