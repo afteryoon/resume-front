@@ -40,6 +40,9 @@
 /* header nav */
 .header {
   box-shadow: 0 3px 10px #ccc;
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 
 .headerContainer{
@@ -438,7 +441,7 @@
 .aboutMeTopContainer {
   width: 1000px;
   margin: auto;
-  margin-top: 40px;
+  margin-top: 70px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
