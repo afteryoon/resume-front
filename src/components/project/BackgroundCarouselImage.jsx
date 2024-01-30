@@ -10,7 +10,7 @@ const ExampleCarouselImage = ({ projectInfo, myProject1_github }) => {
     const explanation = projectInfo[4];
     const functions = projectInfo[5];
     const skills = projectInfo[6];
-
+    const proInfo =[projectInfo[7]];
     
     const urlClick=(e)=>{
         const url=e.target.dataset.to;
@@ -33,18 +33,19 @@ const ExampleCarouselImage = ({ projectInfo, myProject1_github }) => {
                                 <div className='functions' key={`func-${index}`} style={{marginLeft: '5px'}}><span className='originFont'>✔</span> {func}</div>
                             ))}
 
-                            {myProject1_github !== null ? (
+                        {myProject1_github !== null && (
                                 <>
-                                    <h5 style={{marginTop: '30px'}}>GitHub</h5>
+                                    <h5 style={{ marginTop: '30px' }}>GitHub</h5>
                                     <p className='gitUrl' >
-                                        <button onClick={urlClick} data-to={myProject1_github}>git-dagachi</button>
-                                    </p>
-                                    <h5 style={{marginTop: '30px'}}>notion</h5>
-                                    <p className='gitUrl' >
-                                        <button onClick={urlClick} data-to="https://www.notion.so/fa933c9f080f425cb5648860b8186dbd">notion-dagachi</button>
+                                        <button onClick={urlClick} data-to={myProject1_github}>git-{title}</button>
                                     </p>
                                 </>
-                            ) : null}
+                            )}
+
+                            <h5 style={{ marginTop: '30px' }}>notion</h5>
+                            <p className='gitUrl' >
+                                <button onClick={urlClick} data-to="https://www.notion.so/fa933c9f080f425cb5648860b8186dbd">notion-{title}</button>
+                            </p>
 
                             <h5 style={{marginTop: '30px'}}>기술 스택</h5>
                             {skills.map((skill, index) => (

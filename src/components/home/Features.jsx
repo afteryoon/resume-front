@@ -14,7 +14,7 @@ const Features = () => {
                     안녕하세요! 반갑습니다! 😊
                 </p>
                 <p>
-                    성실함과 끈기를 갖춘 신입 개발자 정상윤입니다!
+                    프로그래밍을 좋아하는 신입 개발자 정상윤입니다!
                 </p>
                 </span>
                 
@@ -35,6 +35,24 @@ const Features = () => {
                     </p>
                 </span>
             </div>
+            <div class="message received">
+                <span class="content">최근 IT 기술 트렌드는 무엇이 있나요? 😊</span>
+            </div>
+            <div class="message sent">
+                <span class="content">
+                    <p>
+                        온프라미스 환경에서 AWS로의 마이그레이션과
+                    </p>
+                   
+                    <p>
+                        쿠버네티스를 사용한 컨테이너화는 현재 많이 사용되고 있는 기술입니다. 또한, 자동 통합과 자동 배포 환경에서 개발을 진행하는 곳이 늘어나고 있으며, EKS 환경에서의 버전 업데이트로 인해 개발자들은 코드 관리와 넓은 범위의 이해와 공부에 노력하고 있습니다. 저도 그에 맞춰 AWS 용어와 개념을 공부를 병행하며 먼저 리눅스 환경을 공부하고, 네트워크의 이론적인 공부를 정리하였습니다.
+                    </p>
+                    <p>
+                       이후엔 업무에 익숙해진 다음 AWS 와 관련된 자격증을 공부를 병행할 계획입니다!
+                    </p>
+                </span>
+            </div>
+
             <div class="message received">
                 <span class="content">취업 후 본인의 목표에 대해 이야기 해주세요! 😊</span>
             </div>
