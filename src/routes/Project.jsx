@@ -14,7 +14,7 @@ const Project = () => {
         "취미생활을 공유하고 경험을 나누는 다가치!", 
         ["모임을 달력에 기록, 길 안내까지!", "친목을 도모하는 단체 채팅!", "내 마음대로 취향껏 고르는 레이아웃"], 
         ["spring","springBoot", "oracleDB", "Java","JavaScript", "git"],
-        "https://www.notion.so/fa933c9f080f425cb5648860b8186dbd?pvs=4"
+        "https://leaf-vault-03a.notion.site/fa933c9f080f425cb5648860b8186dbd?pvs=4"
     ];
     const myProject1_github = 'https://github.com/newTypeo/dagachi';
 
@@ -26,7 +26,7 @@ const Project = () => {
         "서버 관리와 로그 관리 도메인의 이해", 
         ["아파치 톰캣 다운로드, server.xml 작성", "로그 경로 설정, 도메인 설정", "백업 매니저를 사용한 클러스터링"], 
         ["LInux","centOS",  ],
-        "https://www.notion.so/89393768cca34c5eaa481a4b54f1a36e?pvs=4"
+        "https://leaf-vault-03a.notion.site/89393768cca34c5eaa481a4b54f1a36e?pvs=73"
     ];
     
 
