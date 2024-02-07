@@ -28,7 +28,16 @@ const Project = () => {
         ["LInux","centOS",  ],
         "https://leaf-vault-03a.notion.site/89393768cca34c5eaa481a4b54f1a36e?pvs=73"
     ];
-    
+    const myProject3 = [
+        "자바 문제 해결", 
+        ["/img/procote1.png", "/img/solved1.png","/img/solved2.png"], 
+        "2023.12 ~", 
+        "1명", 
+        "문제 해결 능력 향상 및 알고리즘 학습", 
+        ["자바 문제 풀이", "알고리즘 학습", "문제 해설 코드 읽기 및 풀이"], 
+        ["JAVA",  ],
+        "https://leaf-vault-03a.notion.site/4f31ad53553f4216b52c8d9ddb3a58f3?pvs=4"
+    ];
 
 
 
@@ -44,10 +53,10 @@ const Project = () => {
                     <BackgroundCarouselImage projectInfo = {myProject2} myProject1_github={null} />
                     
                 </Carousel.Item>
-                {/* <Carousel.Item>
-                    <BackgroundCarouselImage projectInfo = {myProject1} />
+                { <Carousel.Item>
+                    <BackgroundCarouselImage projectInfo = {myProject3} myProject1_github={null} />
                     
-                </Carousel.Item>  */}
+                </Carousel.Item>  }
             </Carousel>
         </div>
     )
