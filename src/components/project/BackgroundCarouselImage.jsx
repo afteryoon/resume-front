@@ -10,7 +10,7 @@ const ExampleCarouselImage = ({ projectInfo, myProject1_github }) => {
     const explanation = projectInfo[4];
     const functions = projectInfo[5];
     const skills = projectInfo[6];
-    const proInfo =[projectInfo[7]];
+    const notionInfo =projectInfo[7];
     
     const urlClick=(e)=>{
         const url=e.target.dataset.to;
@@ -44,7 +44,7 @@ const ExampleCarouselImage = ({ projectInfo, myProject1_github }) => {
 
                             <h5 style={{ marginTop: '30px' }}>notion</h5>
                             <p className='gitUrl' >
-                                <button onClick={urlClick} data-to="https://www.notion.so/fa933c9f080f425cb5648860b8186dbd">notion-{title}</button>
+                                <button onClick={urlClick} data-to={notionInfo}>notion-{title}</button>
                             </p>
 
                             <h5 style={{marginTop: '30px'}}>기술 스택</h5>
