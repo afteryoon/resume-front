@@ -12,6 +12,21 @@
   font-weight: 300;
   font-style: normal;
 }
+@media (max-width: 768px) {
+  .App {
+    font-size: 16px; 
+    
+  }
+
+  .homeContainer {
+    width: 90%; 
+    
+  }
+
+
+  
+}
+
 
 
 .App {
