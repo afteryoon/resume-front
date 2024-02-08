@@ -24,10 +24,11 @@
   .myStroyBackColor{
     width: 90%; 
   }
-  .technologyContainer{
+  .technologyContainer, .skillContainer, .frontendContainer,
+   .backendContainer, .toolContainer, .VCContainer{
     width: 90%; 
   }
-  .projectContainer{
+  .projectContainer, .projectInfoContainer{
     width: 90%; 
   }
   
