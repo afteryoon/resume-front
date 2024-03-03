@@ -1,3 +1,4 @@
+import Button from 'react-bootstrap/Button';
 const MyInfo = ()=> {
 
     const academic  ={
@@ -13,8 +14,15 @@ const MyInfo = ()=> {
         academy:{
             scName:"KH 정보교육원",
             department:"자바(JAVA) 기반 개발자 양성과정",
-            period:"2022.02-2021.09",
+            period:"2023.02-2023.09",
         }
+    }
+    const url='https://leaf-vault-03a.notion.site/4f31ad53553f4216b52c8d9ddb3a58f3?pvs=4';
+    const notion='https://leaf-vault-03a.notion.site/Technology-e02bae21e66e4cb7a8b159aee264d3d4?pvs=4';
+    const git='https://github.com/newTypeo/dagachi';
+    const urlClick=(e)=>{
+        const url=e.target.dataset.to;
+        window.open(url);
     }
 
 
@@ -22,11 +30,18 @@ const MyInfo = ()=> {
         <div className="myInfoContainer">
             
             <div className="myInfoContents">
+                
                  <div>
+                    <h4>{academic.academy.scName}</h4>
+                    <h4>{academic.academy.department}</h4>
+                    <h4>{academic.academy.period}</h4>
+                    
+                </div>
+                
+                <div>
                     <h4>{academic.university.scName}</h4>
                     <h4>{academic.university.department}</h4>
                     <h4>{academic.university.period}</h4>
-                    <br/>
                 </div>
                 <div>
                     <h4>강사가 인정한 강철체력, 긍정적인 마인드</h4>
@@ -36,12 +51,21 @@ const MyInfo = ()=> {
                     <br/>
                 </div>
                 <div>
-                <h4>{academic.academy.scName}</h4>
-                    <h4>{academic.academy.department}</h4>
-                    <h4>{academic.academy.period}</h4>
-                    <br/>
-                    <h4>{academic.academy.scName}에서 6개월간 교육을 받았습니다. 기본적인 cs 지식과 객체지향 프로그래밍에 대해 학습하고 Spring FrameWork와 SpringBoot 를 사용한 프로젝트를 진행하였습니다. </h4>
-                    <h4>수료 이후 부족한 이론을 채우기 위해 네트워크의 개념과 CS 지식과 리눅스 공부를 진행하였습니다. </h4>
+                    <h4>
+                        책임감있는 신입 개발자 정상윤입니다.
+                    </h4>
+                    <h4>
+                        성실함과 인성을 바탕으로 함께하고 싶습니다.
+                    </h4>
+                    <h4>
+                    <Button variant="outline-primary" onClick={urlClick} data-to={url}>매일 백준풀기</Button>{' '}
+                    </h4>
+                    <h4>
+                    <Button variant="outline-primary" onClick={urlClick} data-to={notion}>notion 바로가기</Button>{' '}
+                    </h4>
+                    <h4>
+                    <Button variant="outline-primary" onClick={urlClick} data-to={git}>git 바로가기</Button>{' '}
+                    </h4>
                 </div>
               
             </div>
