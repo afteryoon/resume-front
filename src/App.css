@@ -496,6 +496,12 @@
   text-align: left;
 }
 
+#headIMG{
+  width: 1000px;
+  height: 500px;
+  
+}
+
 /* 
 .App-logo {
   height: 40vmin;
